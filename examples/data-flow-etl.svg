@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600">
+  <style>
+    text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  </style>
+  <defs>
+    <marker id="arr-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb"/>
+    </marker>
+    <marker id="arr-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#16a34a"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="600" fill="#ffffff"/>
+  <text x="500" y="40" fill="#111827" font-size="18" font-weight="600" text-anchor="middle">ETL Data Pipeline</text>
+  <text x="500" y="60" fill="#6b7280" font-size="12" text-anchor="middle">Extract → Transform → Load → Analytics</text>
+  <line x1="180" y1="280" x2="238" y2="280" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <rect x="177.0" y="260.0" width="64" height="14" rx="2" fill="#ffffff" opacity="0.95"/>
+  <text x="209.0" y="270.0" fill="#6b7280" font-size="11" text-anchor="middle">raw data</text>
+  <line x1="360" y1="280" x2="418" y2="280" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <rect x="360.5" y="260.0" width="57" height="14" rx="2" fill="#ffffff" opacity="0.95"/>
+  <text x="389.0" y="270.0" fill="#6b7280" font-size="11" text-anchor="middle">cleaned</text>
+  <line x1="540" y1="280" x2="598" y2="280" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <rect x="540.5" y="260.0" width="57" height="14" rx="2" fill="#ffffff" opacity="0.95"/>
+  <text x="569.0" y="270.0" fill="#6b7280" font-size="11" text-anchor="middle">modeled</text>
+  <line x1="720" y1="280" x2="778" y2="200" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <rect x="727.5" y="220.0" width="43" height="14" rx="2" fill="#ffffff" opacity="0.95"/>
+  <text x="749.0" y="230.0" fill="#6b7280" font-size="11" text-anchor="middle">facts</text>
+  <line x1="850" y1="240" x2="850" y2="318" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <rect x="821.5" y="259.0" width="57" height="14" rx="2" fill="#ffffff" opacity="0.95"/>
+  <text x="850.0" y="269.0" fill="#6b7280" font-size="11" text-anchor="middle">queries</text>
+  <rect x="60" y="240" width="120" height="80" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="120.0" y="276.0" fill="#111827" font-size="14" font-weight="500" text-anchor="middle">Source DBs</text>
+  <text x="120.0" y="294.0" fill="#6b7280" font-size="11" text-anchor="middle">MySQL, Mongo</text>
+  <rect x="240" y="240" width="120" height="80" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="300.0" y="276.0" fill="#111827" font-size="14" font-weight="500" text-anchor="middle">Extract</text>
+  <text x="300.0" y="294.0" fill="#6b7280" font-size="11" text-anchor="middle">CDC + Batch</text>
+  <rect x="420" y="240" width="120" height="80" rx="8" fill="#faf5ff" stroke="#ede9fe" stroke-width="1.5"/>
+  <text x="480.0" y="276.0" fill="#111827" font-size="14" font-weight="500" text-anchor="middle">Transform</text>
+  <text x="480.0" y="294.0" fill="#6b7280" font-size="11" text-anchor="middle">Spark / dbt</text>
+  <rect x="600" y="240" width="120" height="80" rx="8" fill="#f0fdf4" stroke="#dcfce7" stroke-width="1.5"/>
+  <text x="660.0" y="276.0" fill="#111827" font-size="14" font-weight="500" text-anchor="middle">Load</text>
+  <text x="660.0" y="294.0" fill="#6b7280" font-size="11" text-anchor="middle">Bulk Insert</text>
+  <rect x="780" y="160" width="140" height="80" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.5"/>
+  <text x="850.0" y="196.0" fill="#111827" font-size="14" font-weight="500" text-anchor="middle">Data Warehouse</text>
+  <text x="850.0" y="214.0" fill="#6b7280" font-size="11" text-anchor="middle">BigQuery</text>
+  <rect x="780" y="320" width="140" height="80" rx="8" fill="#fff7ed" stroke="#fed7aa" stroke-width="1.5"/>
+  <text x="850.0" y="356.0" fill="#111827" font-size="14" font-weight="500" text-anchor="middle">BI Dashboard</text>
+  <text x="850.0" y="374.0" fill="#6b7280" font-size="11" text-anchor="middle">Looker</text>
+  <line x1="60" y1="520" x2="90" y2="520" stroke="#2563eb" stroke-width="2" marker-end="url(#arr-blue)"/>
+  <text x="96" y="524" fill="#6b7280" font-size="12">Data flow</text>
+</svg>
